@@ -33,22 +33,34 @@ class Home extends StatelessWidget {
                   Colors.black45
                 ],
               )),
-              child: const Text('Satinder singh \n loves nature',
+              child: const Text('Satinder singh sandhu \n loves nature',
                   style: TextStyle(
                     fontSize: 30,
                   )),
             ),
             Container(
-                alignment: Alignment.topCenter,
-                decoration: BoxDecoration(
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 201, 23, 23),
-                        width: 2)),
-                height: 400,
-                child: const Image(
-                  image: AssetImage('assets/nature.jpg'),
-                  fit: BoxFit.scaleDown,
-                )),
+              margin: const EdgeInsets.all(20),
+              alignment: Alignment.center,
+              height: 300,
+              decoration: BoxDecoration(
+                  image: const DecorationImage(
+                      fit: BoxFit.fill, image: AssetImage('assets/nature.jpg')),
+                  shape: BoxShape.circle,
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Colors.pink,
+                        offset: Offset.zero,
+                        blurRadius: 20,
+                        blurStyle: BlurStyle.solid),
+                  ],
+                  color: Colors.yellow[200],
+                  border: Border.all(color: Colors.black, width: 5)),
+              child: const Icon(
+                Icons.add,
+                size: 50,
+                color: Colors.blue,
+              ),
+            )
           ],
         ));
   }
