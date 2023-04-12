@@ -44,7 +44,8 @@ class Home extends StatelessWidget {
               height: 300,
               decoration: BoxDecoration(
                   image: const DecorationImage(
-                      fit: BoxFit.fill, image: AssetImage('assets/nature.jpg')),
+                      fit: BoxFit.fill,
+                       image: AssetImage('assets/nature.jpg')),
                   shape: BoxShape.circle,
                   boxShadow: const [
                     BoxShadow(

@@ -1,0 +1,5 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "spotlessGradle.diagnostics.enable": true,
+    "spotlessGradle.format.enable": true
+}
